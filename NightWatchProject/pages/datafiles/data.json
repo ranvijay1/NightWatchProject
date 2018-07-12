@@ -1,0 +1,20 @@
+{
+    "menuTab": {
+        "whatWeDo": "What We Do",
+        "howWeDoIt": "How We Do It",
+        "ourWork": "Our Work",
+        "insights": "Insights",
+        "about": "About",
+        "careers": "Careers"
+    },
+    "pageName": {
+        "whatWeDo": "What We Do",
+        "howWeDoIt": "How We Do It",
+        "ourWork": "Our Work",
+        "insights": "Insights",
+        "about": "About",
+        "careers": "Work with Us",
+        "contactUs": "Contact Us"
+    }
+    
+}
