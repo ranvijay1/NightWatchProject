@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="0"
+            failures="0"
+            tests="14">
+
+  <testsuite name="demotestForEpam_spec"
+    errors="0" failures="0" hostname="" id="" package="demotestForEpam_spec" skipped="0"
+    tests="14" time="19.45" timestamp="Thu, 12 Jul 2018 10:07:11 GMT">
+  
+    <testcase name="Verifying if all tab is present in the epam main page" classname="demotestForEpam_spec" time="6.051" assertions="7">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should select one by one tab and verifying correct tab opened" classname="demotestForEpam_spec" time="4.863" assertions="6">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    </testcase>
+  
+    <testcase name="Should select &#34;How We Do It&#34; page" classname="demotestForEpam_spec" time="0.3870" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Should scroll and click on &#34;Contact Us&#34; button" classname="demotestForEpam_spec" time="1.111" assertions="0">
+    </testcase>
+  
+    <testcase name="Verifying Contact Us page opened" classname="demotestForEpam_spec" time="0.04200" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Should select &#34;Careers&#34; page" classname="demotestForEpam_spec" time="1.034" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Should enter &#34;Test Automation Engineer&#34; in keyword searchbox" classname="demotestForEpam_spec" time="0.1690" assertions="0">
+    </testcase>
+  
+    <testcase name="Verifying if &#34;Test Automation Engineer&#34; enyered in keyword searchbox" classname="demotestForEpam_spec" time="0.03000" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Should select Hyderabad from Location drop down" classname="demotestForEpam_spec" time="0.2310" assertions="0">
+    </testcase>
+  
+    <testcase name="Verifying &#34;Hyderabad&#34; is selected in Location drop down" classname="demotestForEpam_spec" time="0.03100" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Should select Software Test Engineering from Skills drop down" classname="demotestForEpam_spec" time="4.133" assertions="0">
+    </testcase>
+  
+    <testcase name="Verifying &#34;Software Test Engineering&#34; is selected in Skills drop down" classname="demotestForEpam_spec" time="0.03100" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Should select Find button to search the job" classname="demotestForEpam_spec" time="1.308" assertions="0">
+    </testcase>
+  
+    <testcase name="Verifying if Search result page opened" classname="demotestForEpam_spec" time="0.03300" assertions="1">
+
+    
+    </testcase>
+  
+
+  
+
+  
+  </testsuite>
+</testsuites>

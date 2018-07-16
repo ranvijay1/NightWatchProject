@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="3">
+
+  <testsuite name="elementdemo_spec"
+    errors="1" failures="0" hostname="" id="" package="elementdemo_spec" skipped="2"
+    tests="3" time="0.003000" timestamp="Mon, 16 Jul 2018 11:20:12 GMT">
+  
+    <testcase name="Verifying if all tab is present in the epam main page" classname="elementdemo_spec" time="0.003000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Elementdemo Spec / Verifying if all tab is present in the epam main page]:
+
+  TypeError: Cannot read property &#39;visible&#39; of undefined
+    at D:\NightWatchProject\tests\elementdemo_spec.js:21:33
+    at Array.forEach (&lt;anonymous&gt;)
+    at Object.Verifying if all tab is present in the epam main page (D:\NightWatchProject\tests\elementdemo_spec.js:20:20)
+    at Module.call (D:\NightWatchProject\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at D:\NightWatchProject\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (D:\NightWatchProject\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (D:\NightWatchProject\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (D:\NightWatchProject\node_modules\q\q.js:796:13)
+    at D:\NightWatchProject\node_modules\q\q.js:556:49
+    at runSingle (D:\NightWatchProject\node_modules\q\q.js:137:13)
+    </system-err>
+  
+
+  
+    
+    <testcase
+      name="Should select one by one tab and verifying correct tab opened" classname="elementdemo_spec">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should select &#34;How We Do It&#34; page" classname="elementdemo_spec">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

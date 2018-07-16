@@ -1,0 +1,25 @@
+{
+  "name": "nightwatchproject",
+  "version": "1.0.0",
+  "description": "Demo for nightwatch",
+  "main": "nightwatch.js",
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ran vijay",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^3.1.0",
+    "jasmine-spec-reporter": "^4.2.1",
+    "mocha": "^5.2.0",
+    "nightwatch": "^0.9.21",
+    "save": "^2.3.2"
+  },
+  "devDependencies": {
+    "jasmine": "^3.1.0"
+  }
+}
