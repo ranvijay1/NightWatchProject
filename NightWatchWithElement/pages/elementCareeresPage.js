@@ -1,7 +1,7 @@
 module.exports = {
     elements: {
       keyWordOrJobidInputSearchBox: { 
-        selector: '//*[contains(@class,"padding-normal section")]//*[normalize-space() = "Keyword or job ID"]/parent::label//input' ,
+        selector: '//*[contains(@class,"padding-normal section")]//input[contains(@class,"input job-search")]' ,
         locateStrategy: 'xpath' 
       },
       locationDropDown: { 
@@ -13,7 +13,7 @@ module.exports = {
           locateStrategy: 'xpath'
       },
       skillDropDown: {
-          selector: '//*[normalize-space() = "Skills"]/parent::*//*[@class="default-label"]',
+          selector: '//*[contains(@class,"padding-normal section")]//div[contains(@class,"default-label")]',
           locateStrategy: 'xpath'
       },
       skillDropDownOption: {
@@ -25,12 +25,11 @@ module.exports = {
         locateStrategy: 'xpath'
       },
       findButton: {
-        selector: '//button[normalize-space(.)="Find"][not(contains(@class,"header"))]',
+        selector: '//*[contains(@class,"padding-normal section")]//button',
         locateStrategy: 'xpath'
       },
       searchResultReference: {
-        selector: '//*[@class="search-result"]',
-        locateStrategy: 'xpath'
+        selector: '[class*="search-result"]',
       }
     }
   };
