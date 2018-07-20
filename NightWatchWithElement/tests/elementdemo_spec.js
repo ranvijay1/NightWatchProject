@@ -1,4 +1,5 @@
 require('./../pages/allPageObjects.js')
+const util = require('util');
 
 var obj = Data['menuTab'];
 var pageObj = Data["pageName"];
@@ -12,8 +13,7 @@ module.exports = {
         var EpamMainPage = browser.page.elementEpamMainPage();
         EpamMainPage.navigate();
         browser.windowMaximize()
-            .waitForElementVisible(Locators.bodyLocators, 2000);
-
+            .waitForElementVisible(EpamMainPage.elements.bodyElement.selector, 2000);
     },
 
     after: function (browser) {
@@ -30,7 +30,6 @@ module.exports = {
     'Should select one by one tab and verifying correct tab opened': function (browser) {
         var EpamMainPage = browser.page.elementEpamMainPage();
         allTabName.forEach(function (tabName, index) {
-            console.log(tabName);
             // Click on Tab
             EpamMainPage.click(tabName);
 
@@ -92,8 +91,9 @@ module.exports = {
         var CareerPage = browser.page.elementCareeresPage();
         CareerPage.click('@locationDropDown');
 
-        CareerPage.getLocationInView('@dropDownOption', function (result) {
-            CareerPage.click('@dropDownOption');
+        var dropDownOptions = util.format(CareerPage.elements.dropDownOption.selector, 'Hyderabad');
+        CareerPage.getLocationInView(dropDownOptions, function () {
+            CareerPage.click(dropDownOptions);
         });
     },
 
@@ -108,13 +108,17 @@ module.exports = {
         var CareerPage = browser.page.elementCareeresPage();
         CareerPage.click('@skillDropDown');
 
-        browser.useXpath().waitForElementVisible(Locators.skillDropDownOption, 2000);
-        CareerPage.click('@skillDropDownOption');
+        var dropDownOptions = util.format(CareerPage.elements.skillDropDownOption.selector, 'Software Test Engineering');
+        browser.waitForElementVisible(dropDownOptions, 2000);
+        CareerPage.getLocationInView(dropDownOptions, function () {
+            CareerPage.click(dropDownOptions);
+        });
     },
 
     'Verifying "Software Test Engineering" is selected in Skills drop down': function (browser) {
         var CareerPage = browser.page.elementCareeresPage();
-        CareerPage.assert.visible('@selectedItemFromDropDown');
+        var selectedOption = util.format(CareerPage.elements.selectedItemFromDropDown.selector, 'Software Test Engineering');
+        CareerPage.assert.visible(selectedOption);
     },
 
     'Should select Find button to search the job': function (browser) {

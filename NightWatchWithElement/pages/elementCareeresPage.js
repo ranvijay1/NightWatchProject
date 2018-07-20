@@ -1,32 +1,25 @@
 module.exports = {
     elements: {
       keyWordOrJobidInputSearchBox: { 
-        selector: '//*[contains(@class,"padding-normal section")]//input[contains(@class,"input job-search")]' ,
-        locateStrategy: 'xpath' 
+        selector: '[class*="padding-normal section"] input[class*="input job-search"]',
       },
       locationDropDown: { 
-        selector: '//*[contains(@class,"padding-normal section")]//div[contains(@id,"select-box-location")]' ,
-        locateStrategy: 'xpath' 
+        selector: '[class*="padding-normal section"] [id*="select-box-location"]',
       },
       dropDownOption: {
-          selector: '//*[contains(@id,"select-box-location")]//li[normalize-space(.)="Hyderabad"]',
-          locateStrategy: 'xpath'
+          selector: '[id*="%s"]',
       },
       skillDropDown: {
-          selector: '//*[contains(@class,"padding-normal section")]//div[contains(@class,"default-label")]',
-          locateStrategy: 'xpath'
+          selector: '[class*="padding-normal section"] [class*="default-label"]',
       },
       skillDropDownOption: {
-          selector: '//label[normalize-space(.)="Software Test Engineering"]//span',
-          locateStrategy: 'xpath'
+          selector: '[class*="padding-normal section"] label>[data-value*="%s"]+span',
       },
       selectedItemFromDropDown: {
-        selector: '//*[@class="selected-items"]//span[normalize-space(.)="Software Test Engineering"]',
-        locateStrategy: 'xpath'
+        selector: 'span[data-value*="%s"]',
       },
       findButton: {
-        selector: '//*[contains(@class,"padding-normal section")]//button',
-        locateStrategy: 'xpath'
+        selector: '[class*="padding-normal section"] button',
       },
       searchResultReference: {
         selector: '[class*="search-result"]',
