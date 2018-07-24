@@ -1,28 +1,31 @@
 module.exports = {
     elements: {
       keyWordOrJobidInputSearchBox: { 
-        selector: '[class*="padding-normal section"] input[class*="input job-search"]',
+        selector: 'input[class*="input job-search"]',
       },
       locationDropDown: { 
-        selector: '[class*="padding-normal section"] [id*="select-box-location"]',
+        selector: '[id*="select-box-location"]',
       },
       dropDownOption: {
           selector: '[id*="%s"]',
       },
       skillDropDown: {
-          selector: '[class*="padding-normal section"] [class*="default-label"]',
+          selector: '[class*="selected-params"]',
       },
       skillDropDownOption: {
-          selector: '[class*="padding-normal section"] label>[data-value*="%s"]+span',
+          selector: '.checkbox-custom[data-value="%s"]+span',
       },
       selectedItemFromDropDown: {
         selector: 'span[data-value*="%s"]',
       },
       findButton: {
-        selector: '[class*="padding-normal section"] button',
+        selector: '.job-search__submit',
       },
       searchResultReference: {
-        selector: '[class*="search-result"]',
+        selector: '.search-result',
+      },
+      allcheckBoxFromFirstColumn: {
+        selector: '.multi-select-column:nth-child(1) input+span',
       }
     }
   };

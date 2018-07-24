@@ -5,9 +5,9 @@
 
   <testsuite name="elementdemo_spec"
     errors="0" failures="0" hostname="" id="" package="elementdemo_spec" skipped="0"
-    tests="14" time="17.04" timestamp="Wed, 18 Jul 2018 13:24:24 GMT">
+    tests="14" time="17.29" timestamp="Tue, 24 Jul 2018 14:17:59 GMT">
   
-    <testcase name="Verifying if all tab is present in the epam main page" classname="elementdemo_spec" time="7.265" assertions="7">
+    <testcase name="Verifying if all tab is present in the epam main page" classname="elementdemo_spec" time="6.485" assertions="7">
 
     
 
@@ -24,7 +24,7 @@
     
     </testcase>
   
-    <testcase name="Should select one by one tab and verifying correct tab opened" classname="elementdemo_spec" time="4.925" assertions="6">
+    <testcase name="Should select one by one tab and verifying correct tab opened" classname="elementdemo_spec" time="4.667" assertions="6">
 
     
 
@@ -39,54 +39,70 @@
     
     </testcase>
   
-    <testcase name="Should select &#34;How We Do It&#34; page" classname="elementdemo_spec" time="0.3680" assertions="1">
+    <testcase name="Should select &#34;How We Do It&#34; page" classname="elementdemo_spec" time="0.4480" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Should scroll and click on &#34;Contact Us&#34; button" classname="elementdemo_spec" time="1.166" assertions="0">
+    <testcase name="Should scroll and click on &#34;Contact Us&#34; button" classname="elementdemo_spec" time="1.165" assertions="0">
     </testcase>
   
-    <testcase name="Verifying Contact Us page opened" classname="elementdemo_spec" time="0.03000" assertions="1">
+    <testcase name="Verifying Contact Us page opened" classname="elementdemo_spec" time="0.04300" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Should select &#34;Careers&#34; page" classname="elementdemo_spec" time="0.8930" assertions="1">
+    <testcase name="Should select &#34;Careers&#34; page" classname="elementdemo_spec" time="0.9310" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Should enter &#34;Test Automation Engineer&#34; in keyword searchbox" classname="elementdemo_spec" time="0.1820" assertions="0">
-    </testcase>
-  
-    <testcase name="Verifying if &#34;Test Automation Engineer&#34; enyered in keyword searchbox" classname="elementdemo_spec" time="0.02800" assertions="1">
+    <testcase name="Should enter &#34;Test Automation Engineer&#34; in keyword searchbox and verifying the value entered" classname="elementdemo_spec" time="0.2080" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Should select Hyderabad from Location drop down" classname="elementdemo_spec" time="0.2600" assertions="0">
+    <testcase name="Should select Hyderabad from Location drop down" classname="elementdemo_spec" time="0.2680" assertions="0">
     </testcase>
   
-    <testcase name="Verifying &#34;Hyderabad&#34; is selected in Location drop down" classname="elementdemo_spec" time="0.03400" assertions="1">
+    <testcase name="Verifying &#34;Hyderabad&#34; is selected in Location drop down" classname="elementdemo_spec" time="0.03500" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Should select Software Test Engineering from Skills drop down" classname="elementdemo_spec" time="0.6930" assertions="1">
+    <testcase name="Should select Software Test Engineering from Skills drop down" classname="elementdemo_spec" time="0.7230" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Verifying &#34;Software Test Engineering&#34; is selected in Skills drop down" classname="elementdemo_spec" time="0.04000" assertions="1">
+    <testcase name="Verifying &#34;Software Test Engineering&#34; is selected in Skills drop down" classname="elementdemo_spec" time="0.03800" assertions="1">
 
     
     </testcase>
   
-    <testcase name="Should select Find button to search the job" classname="elementdemo_spec" time="1.123" assertions="0">
+    <testcase name="Should select Find button to search the job and verify search result page opened" classname="elementdemo_spec" time="1.042" assertions="1">
+
+    
     </testcase>
   
-    <testcase name="Verifying if Search result page opened" classname="elementdemo_spec" time="0.03700" assertions="1">
+    <testcase name="Select all check boxes from first column" classname="elementdemo_spec" time="0.8190" assertions="1">
+
+    
+    </testcase>
+  
+    <testcase name="Verifying all selected skills present in search result" classname="elementdemo_spec" time="0.4160" assertions="7">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
 
     
     </testcase>
