@@ -25,5 +25,47 @@ module.exports = {
         titleOfPage: {
             selector: '[class*="title"] >h1',
         },
+    },
+    commands: [ {
+
+        /**
+     * @function launchUrl
+     * @description This function is used to open url
+     * @return NA
+     */
+    launchUrl(browser) {
+        this.navigate();
+        browser.windowMaximize()
+            .waitForElementVisible(this.elements.bodyElement.selector, 2000);
+   },
+    /**
+     * @function selectAndVerifyOpenPage
+     * @description This function is used to select tab and verify the page is opened
+     * @param {string} nameOfTab Pass name of tab.
+     * @param {string} nameOfPage Pass name of page.
+     * @return NA
+     */
+    selectAndVerifyOpenPage(nameOfTab, nameOfPage) {
+         // Click on Tab
+         this.click(nameOfTab);
+
+         // Verifying correct page opened
+         this.getText('@titleOfPage', function (result) {
+             this.assert.equal(result.value, nameOfPage);
+         });
+    },
+
+    /**
+     * @function verifyPageOpened
+     * @description This function is used to verify page opened
+     * @param {string} nameOfPage Pass name of page
+     * @return NA
+     */
+    verifyPageOpened(nameOfPage) {
+        // Verifying correct page opened
+        this.getText('@titleOfPage', function (result) {
+            this.assert.equal(result.value, nameOfPage);
+        });
     }
+    }]
 };
