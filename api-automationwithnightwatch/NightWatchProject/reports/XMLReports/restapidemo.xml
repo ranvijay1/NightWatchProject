@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="3">
+
+  <testsuite name="restapidemo"
+    errors="1" failures="0" hostname="" id="" package="restapidemo" skipped="2"
+    tests="3" time="0.6680" timestamp="Tue, 31 Jul 2018 14:48:30 GMT">
+  
+    <testcase name="Should launch uri and verify status code is 200" classname="restapidemo" time="0.6680" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Restapidemo / Should launch uri and verify status code is 200]:
+
+  ReferenceError: assert is not defined
+    at ClientRequest.Should launch uri and verify status code is 200.https.get (D:\NightWatchProject\tests\restapidemo.js:19:13)
+    at Object.onceWrapper (events.js:315:30)
+    at emitOne (events.js:116:13)
+    at ClientRequest.emit (events.js:211:7)
+    at HTTPParser.parserOnIncomingClient [as onIncoming] (_http_client.js:543:21)
+    at HTTPParser.parserOnHeadersComplete (_http_common.js:112:17)
+    at TLSSocket.socketOnData (_http_client.js:440:20)
+    at emitOne (events.js:116:13)
+    at TLSSocket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    </system-err>
+  
+
+  
+    
+    <testcase
+      name="Should launch uri and verify &#34;content-type&#34; header is &#34;application/json; charset=utf-8&#34;" classname="restapidemo">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should launch uri and verify content of response body has 10 users" classname="restapidemo">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>

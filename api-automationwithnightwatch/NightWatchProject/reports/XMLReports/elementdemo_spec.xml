@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="1"
+            failures="0"
+            tests="14">
+
+  <testsuite name="elementdemo_spec"
+    errors="1" failures="0" hostname="" id="" package="elementdemo_spec" skipped="13"
+    tests="14" time="0.004000" timestamp="Mon, 30 Jul 2018 10:49:09 GMT">
+  
+    <testcase name="Verifying if all tab is present in the epam main page" classname="elementdemo_spec" time="0.004000" assertions="0">
+    </testcase>
+  
+
+  
+    <system-err>
+        Error while running [Elementdemo Spec / Verifying if all tab is present in the epam main page]:
+
+  Error: whatWeDo was not found in &#34;elementEpamMainPage&#34;. Available elements: bodyElement,whatToDo,howWeDoIt,ourWork,insights,about,careers,titleOfPage
+    at getElement (D:\NightWatchProject\node_modules\nightwatch\lib\page-object\command-wrapper.js:13:13)
+    at Object.visible (D:\NightWatchProject\node_modules\nightwatch\lib\page-object\command-wrapper.js:81:32)
+    at D:\NightWatchProject\tests\elementdemo_spec.js:26:41
+    at Array.forEach (&lt;anonymous&gt;)
+    at Object.Verifying if all tab is present in the epam main page (D:\NightWatchProject\tests\elementdemo_spec.js:25:20)
+    at Module.call (D:\NightWatchProject\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at D:\NightWatchProject\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (D:\NightWatchProject\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (D:\NightWatchProject\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (D:\NightWatchProject\node_modules\q\q.js:796:13)
+    </system-err>
+  
+
+  
+    
+    <testcase
+      name="Should select one by one tab and verifying correct tab opened" classname="elementdemo_spec">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should select &#34;How We Do It&#34; page" classname="elementdemo_spec">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should scroll and click on &#34;Contact Us&#34; button" classname="elementdemo_spec">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Verifying Contact Us page opened" classname="elementdemo_spec">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should select &#34;Careers&#34; page" classname="elementdemo_spec">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should enter &#34;Test Automation Engineer&#34; in keyword searchbox and verifying the value entered" classname="elementdemo_spec">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should select Hyderabad from Location drop down" classname="elementdemo_spec">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Verifying &#34;Hyderabad&#34; is selected in Location drop down" classname="elementdemo_spec">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should select Software Test Engineering from Skills drop down" classname="elementdemo_spec">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Verifying &#34;Software Test Engineering&#34; is selected in Skills drop down" classname="elementdemo_spec">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Should select Find button to search the job and verify search result page opened" classname="elementdemo_spec">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Select all check boxes from first column" classname="elementdemo_spec">
+      <skipped />
+    </testcase>
+    
+    <testcase
+      name="Verifying all selected tag skills present in search result" classname="elementdemo_spec">
+      <skipped />
+    </testcase>
+    
+  
+  </testsuite>
+</testsuites>
